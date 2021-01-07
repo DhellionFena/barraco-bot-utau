@@ -1,6 +1,10 @@
 import os
 import discord
-from env import TOKEN
+from dotenv import load_dotenv
+
+
+load_dotenv()
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 class MyClient(discord.Client):
     async def on_ready(self):
