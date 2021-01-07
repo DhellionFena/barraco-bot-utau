@@ -1,1 +1,2 @@
 worker: python barraco.py
+web: python barraco.py
